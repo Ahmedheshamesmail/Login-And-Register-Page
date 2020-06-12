@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>login & Register</title>
+<link rel="stylesheet" type="text/css" href="login & Register.css">
+</head>
+
+<body>
+	<div class="hero">
+		<div class="form-box">
+			<div class="button-box">
+				<div id="btn"></div>
+				<button type="button" class="toggle-btn" onClick="login()">Log In</button>
+				<button type="button" class="toggle-btn" onClick="register()">Register</button>
+			</div>
+			<div class="icons">
+			<img src="login-reg-img/fb.png" alt="facbook">
+			<img src="login-reg-img/tw.png" alt="twetter">
+			<img src="login-reg-img/gp.png" alt="googel">
+		</div>
+			<form id="login" class="input-group">
+				<input type="text" class="input-field" placeholder="User Id" required>
+				<input type="password" class="input-field" placeholder="Enter Password" required>
+				<input type="checkbox" class="check-box"><span>Remember Password</span>
+				<button type="submit" class="submit-btn">Log In</button>
+			</form>
+			<form id="register" class="input-group">
+				<input type="text" class="input-field" placeholder="User Id" required>
+				<input type="Email" class="input-field" placeholder="Enter Your Email" required>
+				<input type="password" class="input-field" placeholder="Enter Password" required>
+				<input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span>
+				<button type="submit" class="submit-btn">Register</button>
+			</form>
+		</div>
+		<script>
+			var x = document.getElementById("login");
+			var y = document.getElementById("register");
+			var z = document.getElementById("btn");
+			
+			function register(){
+				x.style.left ="-400px";
+				y.style.left ="50px";
+				z.style.left ="110px";	
+			}
+		function login(){
+				x.style.left ="50px";
+				y.style.left ="450px";
+				z.style.left ="0px";	
+			}
+		</script>
+	</div>
+</body>
+</html>
